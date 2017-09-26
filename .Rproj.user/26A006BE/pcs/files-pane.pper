@@ -1,0 +1,9 @@
+{
+    "path" : "~/FARS/tests/testthat",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

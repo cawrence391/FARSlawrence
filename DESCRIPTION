@@ -1,0 +1,25 @@
+Package: FARS
+Type: Package
+Title: FARS data analysis
+Version: 0.1.0
+Author: Lawrence Cox
+Maintainer: Lawrence Cox <lawrencecox@hotmail.co.uk>
+Description: This package has functions which will read a fars csv 
+    file based on an input of a list of years, which will provide a 
+    dataframe from which a summary of accidents for a given year and
+    month can be obtained, and which plots accidents on a map of US 
+    states based on inputs of a year and a state.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: readr,
+    tidyr,
+    dplyr,
+    graphics,
+    stats,
+    magrittr
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
