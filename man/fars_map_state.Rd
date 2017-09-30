@@ -18,7 +18,7 @@ plot with state map outlined and incident location shown as points on the map
 This function genreates a plot showing the location of each incident in the defined year and state
 }
 \note{
-Files must be in working directory and filenames must be of format "accident_<year>.csv.bz2"
+ERROR if following conditions not met: Files must be in working directory and filenames must be of format "accident_<year>.csv.bz2"
 }
 \examples{
 

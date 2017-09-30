@@ -16,7 +16,7 @@ table summarising the number incidents per calendar month (represented as rows) 
 This function generates a summary table of the number incidents per calendar month in each of the yearly files defined
 }
 \note{
-Files must be in working directory and filenames must be of format "accident_<year>.csv.bz2"
+ERROR if following conditions not met: Files must be in working directory and filenames must be of format "accident_<year>.csv.bz2"
 }
 \examples{
 \dontrun{

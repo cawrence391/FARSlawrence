@@ -34,7 +34,7 @@ fars_read <- function(filename) {
 #' @param year integer of year
 #' @return string representing standard filename of format "accident_<year>.csv.bz2"
 #'
-#' @examples make_filename(2014)
+#' @examples make_filename(2013)
 #'
 #' @note ERROR note: Function does not accept vectors containing multiple numerics
 #'

@@ -16,7 +16,7 @@ dataframe of filename data
 This function reads and returns a dataframe of the specified file
 }
 \note{
-Input must be character string with full extension and file location must be correct
+ERROR if following conditions not met: Input must be character string with full extension and file location must be correct
 }
 \examples{
 \dontrun{

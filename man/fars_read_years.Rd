@@ -16,7 +16,7 @@ dataframes based on each yearly raw fars file
 This function returns individual data frames from raw fars files
 }
 \note{
-Files must be in working directory and filenames must be of format "accident_<year>.csv.bz2"
+ERROR if following conditions not met: Files must be in working directory and filenames must be of format "accident_<year>.csv.bz2"
 }
 \examples{
 \dontrun{

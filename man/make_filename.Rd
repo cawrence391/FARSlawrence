@@ -16,9 +16,9 @@ string representing standard filename of format "accident_<year>.csv.bz2"
 This function generates a standardised filename string with csv.bz2 extension based on the year defined by the user
 }
 \note{
-Function does not accept vectors containing multiple numerics
+ERROR note: Function does not accept vectors containing multiple numerics
 }
 \examples{
-make_filename(2014)
+make_filename(2013)
 
 }
