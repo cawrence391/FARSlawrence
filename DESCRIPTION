@@ -17,7 +17,8 @@ Imports: readr,
     dplyr,
     graphics,
     stats,
-    magrittr
+    magrittr,
+    maps
 RoxygenNote: 6.0.1
 Suggests: knitr,
     rmarkdown,

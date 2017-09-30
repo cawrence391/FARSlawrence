@@ -5,8 +5,8 @@
 #'@param filename character string of full filename with extension
 #'@return dataframe of filename data
 #'
-#'@importFrom readr read_csv
-#'@importFrom dplyr tbl_df
+#'@import readr
+#'@import dplyr
 #'
 #'@examples
 #'\dontrun{
@@ -56,8 +56,7 @@ make_filename <- function(year) {
 #' fars_read_years(2013:2015)
 #' }
 #'
-#' @importFrom readr read_csv
-#' @importFrom dplyr mutate select
+#' @import dplyr
 #' @import magrittr
 #'
 #' @export
@@ -89,8 +88,7 @@ fars_read_years <- function(years) {
 #' fars_summarize_years(2013:2015)
 #' }
 #'
-#' @importFrom readr read_csv
-#' @importFrom tidyr spread
+#' @import tidyr
 #' @import magrittr
 #' @import dplyr
 #'
@@ -113,10 +111,9 @@ fars_summarize_years <- function(years) {
 #' @param year year to plot - integer
 #' @return plot with state map outlined and incident location shown as points on the map
 #'
-#' @importFrom readr read_csv
-#' @importFrom dplyr tbl_df filter
-#' @importFrom maps map
-#' @importFrom graphics points
+#' @import dplyr
+#' @import maps
+#' @import graphics
 #' @import magrittr
 #'
 #' @export
