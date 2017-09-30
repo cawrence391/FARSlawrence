@@ -13,7 +13,7 @@
 #'fars_read("accident_2013.csv.bz2")
 #'}
 #'
-#'@note Input must be character string with full extension and file location must be correct
+#'@note ERROR if following conditions not met: Input must be character string with full extension and file location must be correct
 #'
 #'@export
 #'
@@ -36,7 +36,7 @@ fars_read <- function(filename) {
 #'
 #' @examples make_filename(2014)
 #'
-#' @note Function does not accept vectors containing multiple numerics
+#' @note ERROR note: Function does not accept vectors containing multiple numerics
 #'
 #
 make_filename <- function(year) {
@@ -61,7 +61,7 @@ make_filename <- function(year) {
 #'
 #' @export
 #'
-#' @note Files must be in working directory and filenames must be of format "accident_<year>.csv.bz2"
+#' @note ERROR if following conditions not met: Files must be in working directory and filenames must be of format "accident_<year>.csv.bz2"
 fars_read_years <- function(years) {
   lapply(years, function(year) {
     file <- make_filename(year)
@@ -94,7 +94,7 @@ fars_read_years <- function(years) {
 #'
 #' @export
 #'
-#' @note Files must be in working directory and filenames must be of format "accident_<year>.csv.bz2"
+#' @note ERROR if following conditions not met: Files must be in working directory and filenames must be of format "accident_<year>.csv.bz2"
 fars_summarize_years <- function(years) {
   dat_list <- fars_read_years(years)
   dplyr::bind_rows(dat_list) %>%
@@ -124,7 +124,7 @@ fars_summarize_years <- function(years) {
 #' fars_map_state(1, 2013)
 #' }
 #'
-#' @note Files must be in working directory and filenames must be of format "accident_<year>.csv.bz2"
+#' @note ERROR if following conditions not met: Files must be in working directory and filenames must be of format "accident_<year>.csv.bz2"
 #'
 fars_map_state <- function(state.num, year) {
   filename <- make_filename(year)
