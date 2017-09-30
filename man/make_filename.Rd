@@ -19,6 +19,7 @@ This function generates a standardised filename string with csv.bz2 extension ba
 ERROR note: Function does not accept vectors containing multiple numerics
 }
 \examples{
-make_filename(2013)
+\dontrun{ make_filename(2013)
+}
 
 }
