@@ -11,21 +11,3 @@ vignette: >
 
 This package has functions which will read a fars csv file based on an input of a list of years, which will provide a dataframe from which a summary of accidents for a given year and month can be obtained, and which plots accidents on a map of US states based on inputs of a year and a state.
 
-## Summary
-
-Here is an example output of the `fars_summarize_years()` function which gives a aggregated view of the larger dataset
-
-```{r, summary, echo = FALSE}
-devtools::load_all(quiet = TRUE)
-FARS::fars_summarize_years(2013)
-```
-
-## Map
-
-The `fars_map_state()` function generates a plot showing the location of each incident in the defined year and state
-
-```{r, map, echo=FALSE}
-FARS::fars_map_state(1, 2013)
-```
-
-
