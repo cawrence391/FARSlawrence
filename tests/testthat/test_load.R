@@ -1,12 +1,7 @@
-library(testthat)
-library(FARS)
-library(dplyr)
-library(magrittr)
 library(readr)
+library(dplyr)
 
-setwd(system.file("extdata", package = "FARS"))
+filename <- make_filename(2013)
+data<-fars_read(filename)
+expect_output(str(data), "50 VARIABLES", ignore.case = TRUE)
 
-test_that("fars data loading is working", {
-  b <- as.data.frame(fars_read_years(2013))
-  expect_equal(length(b), 2)
-})
