@@ -1,5 +1,5 @@
 {
-    "path" : "~/FARS/tests/testthat",
+    "path" : "~/FARS/extdata",
     "sortOrder" : [
         {
             "ascending" : true,

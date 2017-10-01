@@ -4,6 +4,8 @@ library(dplyr)
 library(magrittr)
 library(readr)
 
+setwd(system.file("extdata", package = "FARS"))
+
 test_that("fars data loading is working", {
   b <- as.data.frame(fars_read_years(2013))
   expect_equal(length(b), 2)
